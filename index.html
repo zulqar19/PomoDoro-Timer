@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>PomoDoro</title>
+</head>
+<body>
+    <div class="bg-pink-500 w-[100vw] h-[100vh]">
+        <nav>
+            <ul class="flex justify-between p-5 md:w-[90vw] m-auto">
+                <li class="text-3xl text-white">PomoDoro</li>
+                <li class=" border-spacing-1 text-white bg-gray-200 rounded-md p-2"><i class="fa-solid fa-gear px-1"></i>settings</li>
+            </ul>
+            <hr class="w-[90%] text-center mx-10" >
+        </nav>
+        <div class="container bg-gray-400 w-[80vw] h-[55vh] m-auto my-10">
+            <div class="flex justify-between text-white text-center md:w-[60vw] md:text-center md:m-auto">
+                <p class="m-4 active sm:text-2xl" id="pomo-doro">Pomo Doro</p>
+                <p class="m-4 sm:text-2xl" id="short-break">Short Break</p>
+                <p class="m-4 sm:text-2xl" id="long-break">Long Break</p>
+            </div>
+            <div class="container w-[70vw] h-[10vh] m-auto my-7 text-white text-center text-7xl " id="timer">00:10</div>
+            <p id="breaks" class="text-white text-center mb-2 sm:text-2xl"></p>
+            <div class="w-[70vw] flex justify-center text-center m-auto ">
+            <button class="text-white bg-green-200 rounded p-1 sm:p-3 m-2 w-[19vw] sm:text-3xl" onclick="handleStart()">Start</button>
+            <button class="text-white bg-green-200 rounded p-1 sm:p-3 m-2 w-[19vw] sm:text-3xl" onclick="handleRestart()">Restart</button>
+            </div>
+        </div>
+            <hr class="w-[90%] text-center mx-10" >
+            <footer><p class="text-white text-xs text-center w-44 sm:w-96 m-auto">&copy;PomoDoro web app. All Rights Reserved By Md Zulqarnain</p></footer>
+    </div>
+</body>
+</html>
